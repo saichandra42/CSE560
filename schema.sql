@@ -1,34 +1,34 @@
-create table if not exists ubriders (
-	id int not null unique primary key,
-	first_name varchar(50),
-	last_name varchar(50),
-	email varchar(50),
-	gender varchar(50),
-	joined_date date,
-	ip_address varchar(20),
-	country varchar(50),
-	phone_number varchar(50),
-	dob date,
-	avatar varchar(100),
-	payment_type varchar(6),
-	payment_account varchar(50)
+CREATE TABLE IF NOT EXISTS ubriders (
+    id INT NOT NULL UNIQUE PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    email VARCHAR(50),
+    gender VARCHAR(50),
+    joined_date DATE,
+    ip_address VARCHAR(20),
+    country VARCHAR(50),
+    phone_number VARCHAR(50),
+    dob DATE,
+    avatar VARCHAR(100),
+    payment_type VARCHAR(6),
+    payment_account VARCHAR(50)
 );
 
-create table if not exists ubproviders(
-	id int not null unique primary key,
-	driver_name varchar(50),
-	joined_date date,
-	gender varchar(50),
-	known_languages varchar(50),
-	current_cab_id int,
-	phone_number varchar(50),
-	licence_no varchar(50)
+CREATE TABLE IF NOT EXISTS ubproviders (
+    id INT NOT NULL UNIQUE PRIMARY KEY,
+    driver_name VARCHAR(50),
+    joined_date DATE,
+    gender VARCHAR(50),
+    known_languages VARCHAR(50),
+    current_cab_id INT,
+    phone_number VARCHAR(50),
+    licence_no VARCHAR(50)
 );
 
-create table if not exists cab(
-	id int not null unique primary key,
-    registration_no varchar(50) not null unique,
-    cab_brand varchar(50) not null,
-    model varchar(50) not null,
-	min_rate numeric(6,3) not null
-)
+CREATE TABLE IF NOT EXISTS cab (
+    id INT NOT NULL UNIQUE PRIMARY KEY,
+    registration_no VARCHAR(50) NOT NULL UNIQUE,
+    cab_brand VARCHAR(50) NOT NULL,
+    model VARCHAR(50) NOT NULL,
+    min_rate NUMERIC(6 , 3 ) NOT NULL
+);
