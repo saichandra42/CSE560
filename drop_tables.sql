@@ -1,3 +1,3 @@
-drop table if exists ubproviders;
-drop table if exists ubriders;
-drop table if exists cab;
+drop table if exists Rider;
+drop table if exists Provider;
+drop table if exists Cab;

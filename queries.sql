@@ -1,2 +1,2 @@
-select * from ubriders;
-select * from ubproviders;
+select * from Ubriders;
+select * from UbProviders;

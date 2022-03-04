@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS ubriders (
+CREATE TABLE IF NOT EXISTS Rider (
     id INT NOT NULL UNIQUE PRIMARY KEY,
     first_name VARCHAR(50),
     last_name VARCHAR(50),
@@ -14,7 +14,17 @@ CREATE TABLE IF NOT EXISTS ubriders (
     payment_account VARCHAR(50)
 );
 
-CREATE TABLE IF NOT EXISTS ubproviders (
+
+CREATE TABLE IF NOT EXISTS Cab (
+    id INT NOT NULL UNIQUE PRIMARY KEY,
+    registration_no VARCHAR(50) NOT NULL UNIQUE,
+    cab_brand VARCHAR(50) NOT NULL,
+    model VARCHAR(50) NOT NULL,
+    min_rate NUMERIC(6 , 3 ) NOT NULL
+);
+
+
+CREATE TABLE IF NOT EXISTS Provider (
     id INT NOT NULL UNIQUE PRIMARY KEY,
     driver_name VARCHAR(50),
     joined_date DATE,
@@ -22,13 +32,7 @@ CREATE TABLE IF NOT EXISTS ubproviders (
     known_languages VARCHAR(50),
     current_cab_id INT,
     phone_number VARCHAR(50),
-    licence_no VARCHAR(50)
+    licence_no VARCHAR(50),
+    foreign key (current_cab_id) references Cab(id)
 );
 
-CREATE TABLE IF NOT EXISTS cab (
-    id INT NOT NULL UNIQUE PRIMARY KEY,
-    registration_no VARCHAR(50) NOT NULL UNIQUE,
-    cab_brand VARCHAR(50) NOT NULL,
-    model VARCHAR(50) NOT NULL,
-    min_rate NUMERIC(6 , 3 ) NOT NULL
-);
