@@ -25,9 +25,10 @@ create table if not exists ubproviders(
 	licence_no varchar(50)
 );
 
--- create table if not exists rider_saved_locations (
--- 	id int not null,
---     rider_id int not null,
---     saved_location_address varchar(150) not null
--- );
-
+create table if not exists cab(
+	id int not null unique primary key,
+    registration_no varchar(50) not null unique,
+    cab_brand varchar(50) not null,
+    model varchar(50) not null,
+	min_rate numeric(6,3) not null
+)
