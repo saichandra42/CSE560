@@ -36,31 +36,30 @@ CREATE TABLE IF NOT EXISTS Provider (
 );
 
 CREATE TABLE IF NOT EXISTS Payment (
-	id int not null unique primary key,
-    payment_type VARCHAR(6) not null,
-    base_fare float not null,
-    surge_fare float not null,
-    total_amount float not null,
-    time_of_payment varchar(10) not null,
-    payment_account_number VARCHAR(20) not null,
-	bank_transaction_id VARCHAR(50) not null
+	id INT NOT NULL UNIQUE PRIMARY KEY,
+	payment_type VARCHAR(7),
+	base_fare INT,
+	surge_fare INT,
+	total_amount INT,
+	time_of_payment DATE,
+	payment_account_number VARCHAR(50),
+	bank_transaction_id VARCHAR(50)
 );
 
-CREATE TABLE IF NOT EXISTS Trip (
-	id int not null unique primary key,
-    rider_id int not null,
-    provider_id int not null,
-    cab_id int not null,
-    payment_id int not null,
-    rider_rating int not null,
-    rider_feedback varchar(500),
-    provider_feedback varchar(500),
-	pickup_location_lat varchar(50) not null,
-	pickup_location_long varchar(50) not null,
-    drop_location_lat varchar(50) not null,
-    drop_location_long varchar(50) not null,
+
+create table Trip (
+	id INT,
+	rider_id INT,
+	provider_id INT,
+	payment_id INT,
+	rider_rating INT,
+	rider_feedback TEXT,
+	provider_feedback TEXT,
+	pickup_location_lat VARCHAR(50),
+	pickup_location_long VARCHAR(50),
+	drop_location_lat VARCHAR(50),
+	drop_location_long VARCHAR(50),
     FOREIGN KEY (rider_id) REFERENCES Rider(id),
     FOREIGN KEY (provider_id) REFERENCES Provider(id),
-    FOREIGN KEY (payment_id) REFERENCES Payment(id),
-    FOREIGN KEY (cab_id) REFERENCES Cab(id)
+    FOREIGN KEY (payment_id) REFERENCES Payment(id)
 );

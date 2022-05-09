@@ -1,0 +1,26 @@
+[
+	{
+		"rider_id" : 9,
+		"first_name" : "Jennine",
+		"last_name" : "Scrivinor",
+		"COUNT(Trip.id)" : 114
+	},
+	{
+		"rider_id" : 7,
+		"first_name" : "Cheslie",
+		"last_name" : "Ghent",
+		"COUNT(Trip.id)" : 108
+	},
+	{
+		"rider_id" : 8,
+		"first_name" : "Venita",
+		"last_name" : "Klimentyonok",
+		"COUNT(Trip.id)" : 106
+	},
+	{
+		"rider_id" : 10,
+		"first_name" : "Karine",
+		"last_name" : "Millican",
+		"COUNT(Trip.id)" : 105
+	}
+]

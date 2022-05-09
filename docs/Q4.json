@@ -1,0 +1,67 @@
+[
+	{
+		"mon" : 1,
+		"yyyy" : 2022,
+		"sum(total_amount)" : 48714
+	},
+	{
+		"mon" : 4,
+		"yyyy" : 2022,
+		"sum(total_amount)" : 48539
+	},
+	{
+		"mon" : 2,
+		"yyyy" : 2022,
+		"sum(total_amount)" : 44625
+	},
+	{
+		"mon" : 11,
+		"yyyy" : 2021,
+		"sum(total_amount)" : 42273
+	},
+	{
+		"mon" : 12,
+		"yyyy" : 2021,
+		"sum(total_amount)" : 41698
+	},
+	{
+		"mon" : 3,
+		"yyyy" : 2022,
+		"sum(total_amount)" : 41164
+	},
+	{
+		"mon" : 10,
+		"yyyy" : 2021,
+		"sum(total_amount)" : 40686
+	},
+	{
+		"mon" : 6,
+		"yyyy" : 2021,
+		"sum(total_amount)" : 38746
+	},
+	{
+		"mon" : 5,
+		"yyyy" : 2021,
+		"sum(total_amount)" : 38286
+	},
+	{
+		"mon" : 9,
+		"yyyy" : 2021,
+		"sum(total_amount)" : 38234
+	},
+	{
+		"mon" : 7,
+		"yyyy" : 2021,
+		"sum(total_amount)" : 38131
+	},
+	{
+		"mon" : 8,
+		"yyyy" : 2021,
+		"sum(total_amount)" : 29823
+	},
+	{
+		"mon" : 5,
+		"yyyy" : 2022,
+		"sum(total_amount)" : 4958
+	}
+]
