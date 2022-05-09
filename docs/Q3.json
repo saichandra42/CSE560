@@ -1,6 +1,0 @@
-[
-	{
-		"payment_type" : Bitcoin,
-		"COUNT(Payment.id)" : 261
-	}
-]
