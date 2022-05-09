@@ -1,8 +1,3 @@
-
-
-CREATE DATABASE UbLyft;
-USE UbLyft;
-
 # W - Q1 - Find riders who made more than 100 rides in the application
 SELECT Trip.rider_id, Rider.first_name, Rider.last_name, COUNT(Trip.id) 
 from Trip, Rider 
