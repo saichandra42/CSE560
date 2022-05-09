@@ -17,5 +17,6 @@ Refer to https://www.mockaroo.com/scenarios for your custom scenario
 Code for the bonus task is in ublyft-ui and API folder
 Use python3 API/main.py to run the back end server.
 
+Use npm install inside ublyft-ui to install all front end dependencies
 Use npm start inside ublyft-ui folder to start the UI server.
 All code is @https://github.com/saichandra42/CSE560
